@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabla.FXMLTablaDatosController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: ffcccc;">
+         <children>
+            <Label text="Tabla de Datos">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: ffff;">
+         <children>
+            <JFXScrollPane prefHeight="577.0" prefWidth="1040.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="30.0" top="20.0" />
+               </HBox.margin>
+               <children>
+                  <TableView fx:id="tablaDatos" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" />
+               </children>
+            </JFXScrollPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

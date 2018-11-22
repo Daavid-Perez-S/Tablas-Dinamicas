@@ -1,0 +1,16 @@
+
+.botonNuevaConsulta {
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 3px;
+}
+
+.botonNuevaConsulta:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-text-fill: #ff4d4d;
+    -fx-border-color: #ff4d4d;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+}

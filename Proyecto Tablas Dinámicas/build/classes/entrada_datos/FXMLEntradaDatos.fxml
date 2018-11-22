@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: ffff;" stylesheets="@entradadatos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entrada_datos.FXMLEntradaDatosController">
+   <children>
+      <JFXTextArea fx:id="entradaDatos" focusColor="#ff4d4d" labelFloat="true" layoutX="110.0" layoutY="141.0" promptText="Inserta tu consulta SQL aquí..." style="-fx-background-color: f2f2f2;" unFocusColor="#ff4d4d" />
+      <Pane prefHeight="80.0" prefWidth="800.0" style="-fx-background-color: f2f2f2;">
+         <children>
+            <Label layoutX="50.0" layoutY="22.0" text="Insertar Consulta SQL">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="348.0" layoutY="404.0" onAction="#leerDatos" styleClass="botonEnviar" text="Enviar" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
